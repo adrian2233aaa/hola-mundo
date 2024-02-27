@@ -1,0 +1,39 @@
+@startuml
+
+class Mascota{
+- salud : int
++Comer() 
+ 
+}
+class Alimento
+class Salud{
+- buena : int
+}
+class Agua
+class Hueso
+class Juguete
+class Dueño 
+class Casa
+class Animal
+class felicidad
+class Accesorio
+class Vestimenta
+class Croqueta
+
+Mascota o-- Alimento
+Mascota o-- Hueso
+Mascota o-- Juguete
+Dueño o-- Mascota
+Salud *-- Mascota
+Mascota o-- Agua
+Mascota --|> Animal
+Salud o-- Alimento
+Felicidad *-- Mascota
+Accesorio --|> Vestimenta
+Mascota o-- Vestimenta
+Croqueta --|> Alimento
+Mascota *-- Casa
+Hueso o-- Juguete
+
+
+@enduml
